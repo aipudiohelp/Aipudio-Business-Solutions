@@ -306,8 +306,13 @@ src="https://www.facebook.com/tr?id=26761924540141738&ev=PageView&noscript=1"/><
 
 <script>
 const WHATSAPP_NUMBER="201005825888";
-const MESSAGE="السلام عليكم، أريد تنفيذ Landing Page لمنتجي. اسم المنتج: — نوع النشاط: — السعر: — رابط الصفحة/الحساب: — وسأرسل الصور والتفاصيل للبدء.";
-
+const MESSAGE =
+"السلام عليكم، أريد تنفيذ Landing Page لمنتجي.\n\n" +
+"📦 المنتج: —\n" +
+"🏢 نوع النشاط: —\n" +
+"💰 السعر: —\n" +
+"🔗 رابط الصفحة/الحساب: —\n\n" +
+"وسأرسل الصور والتفاصيل للبدء.";
 document.querySelectorAll(".wa").forEach(function(button){
 button.addEventListener("click",function(){
 const placement=button.dataset.placement||"unknown";
