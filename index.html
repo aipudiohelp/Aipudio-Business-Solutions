@@ -41,7 +41,26 @@ footer{text-align:center;padding:45px 0 90px;color:#85899e}
     send_page_view: true
   });
 </script>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
+fbq('init', '26761924540141738');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26761924540141738&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 <header class="wrap nav">
@@ -136,21 +155,32 @@ footer{text-align:center;padding:45px 0 90px;color:#85899e}
 <a class="float" id="waFloat" href="#" aria-label="WhatsApp">◔</a>
 
 <script>
-const WHATSAPP_NUMBER="0021005825888";
-const message=encodeURIComponent("مرحبًا Aipudio، عندي مشكلة في مشروعي وعايز أشرحها لكم وأعرف هل عندكم حل مناسب.");
-const url=`https://wa.me/${201005825888}?text=${message}`;
+const WHATSAPP_NUMBER = "201005825888";
+const message = encodeURIComponent(
+  "مرحبًا Aipudio، عندي مشكلة في مشروعي وعايز أشرحها لكم وأعرف هل عندكم حل مناسب."
+);
+
+const url = `https://wa.me/${201005825888}?text=${message}`;
 
 const whatsappLinks = [
-  { element: document.getElementById("wa"), placement: "main_cta" },
-  { element: document.getElementById("waFloat"), placement: "floating_cta" }
+  {
+    element: document.getElementById("wa"),
+    placement: "main_cta"
+  },
+  {
+    element: document.getElementById("waFloat"),
+    placement: "floating_cta"
+  }
 ];
 
-whatsappLinks.forEach(({element, placement}) => {
+whatsappLinks.forEach(({ element, placement }) => {
   if (!element) return;
 
   element.href = url;
 
   element.addEventListener("click", () => {
+
+    // Google Analytics
     if (typeof gtag === "function") {
       gtag("event", "generate_lead", {
         lead_method: "whatsapp",
@@ -158,6 +188,16 @@ whatsappLinks.forEach(({element, placement}) => {
         funnel: "general_business_solutions"
       });
     }
+
+    // Meta Pixel
+    if (typeof fbq === "function") {
+      fbq("track", "Lead", {
+        lead_method: "whatsapp",
+        cta_placement: placement,
+        funnel: "general_business_solutions"
+      });
+    }
+
   });
 });
 </script>
