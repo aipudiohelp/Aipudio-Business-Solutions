@@ -1,388 +1,50 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aipudio | Landing Page لمنتجك</title>
-<meta name="description" content="صفحة هبوط احترافية لعرض منتجك وتحويل زوار الإعلانات إلى طلبات عبر WhatsApp.">
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aipudio | Landing Pages مصممة للبيع</title>
+<meta name="description" content="صفحة هبوط سريعة ومصممة للموبايل والإعلانات والطلب عبر واتساب. تسليم خلال 48 ساعة.">
 <meta name="theme-color" content="#080914">
-
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#080914;color:#f7f7fb;font-family:Arial,Tahoma,sans-serif;line-height:1.7}
-a{text-decoration:none;color:inherit}
-.wrap{max-width:620px;margin:auto;padding:0 18px}
-section{padding:30px 0}
-.hero{text-align:center;padding:38px 0 25px;background:radial-gradient(circle at 50% 0%,rgba(139,61,255,.18),transparent 48%)}
-.eyebrow{display:inline-block;padding:5px 12px;border:1px solid rgba(139,61,255,.45);border-radius:999px;color:#c8a9ff;background:rgba(139,61,255,.08);font-size:12px}
-h1{font-size:clamp(34px,9vw,52px);line-height:1.16;letter-spacing:-1.5px;margin:15px 0 12px}
-h2{font-size:28px;line-height:1.25;margin:7px 0 10px}
-p{color:#aeb4c4;font-size:16px;margin:5px 0}
-.accent{color:#b993ff}
-.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;margin:18px 0;border-radius:15px;background:linear-gradient(135deg,#25d366,#18b957);color:#06150c;font-weight:900;font-size:18px;box-shadow:0 10px 30px rgba(37,211,102,.16)}
-.note{text-align:center;color:#7f8798;font-size:12px}
-.flow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px}
-.card{background:#111322;border:1px solid #24283b;border-radius:16px;padding:14px}
-.step{text-align:center}.step b{display:block;font-size:15px}.step span{font-size:12px;color:#8e96a9}
-.demo{margin-top:17px;background:#0d0f1b;border:1px solid #2a2d42;border-radius:20px;padding:10px}
-.mock{overflow:hidden;background:#f7f8fb;color:#141824;border-radius:14px}
-.mockbar{height:32px;background:#e7eaf0;padding:7px 10px;color:#98a0ae;font-size:10px}
-.mockbody{padding:16px}.product{height:165px;border-radius:12px;background:linear-gradient(135deg,#e2e8f0,#9aabc0);display:grid;place-items:center;font-size:46px}
-.mock h3{font-size:23px;margin:10px 0 0}.mockprice{font-size:24px;font-weight:900;margin:7px 0}.mockbtn{background:#20bf63;color:#fff;text-align:center;padding:10px;border-radius:10px;font-weight:800}
-.caption{text-align:center;color:#7e8798;font-size:12px;padding:9px 3px 1px}
-.features{display:grid;gap:10px;margin-top:14px}.feature b{font-size:15px}.feature p{font-size:13px}
-.offer{text-align:center;padding:24px;background:linear-gradient(180deg,#15182a,#0d101c);border:1px solid #353951;border-radius:22px}
-.price{font-size:45px;font-weight:900;line-height:1.1;margin:4px 0 5px}.offer ul{text-align:right;list-style:none;padding:0;margin:15px 0}.offer li{padding:5px 0;color:#dce1ea}.offer li:before{content:"✓";color:#42dc82;font-weight:bold;margin-left:8px}
-.final{text-align:center;padding-bottom:40px}.final h2{font-size:31px}
-.footer{text-align:center;color:#697186;font-size:11px;padding:22px;border-top:1px solid #1a1d2b}
-@media(min-width:600px){.flow{grid-template-columns:repeat(4,1fr)}}
+:root{--bg:#050611;--panel:#0b0d1c;--text:#f7f8ff;--muted:#aeb3c9;--purple:#8b3dff;--blue:#00a9ff;--cyan:#12d9ff;--line:rgba(255,255,255,.09);--wa:#25D366;--grad:linear-gradient(100deg,#9b36ff,#4e55ff 48%,#08c8ff)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 7%,rgba(112,44,255,.18),transparent 28%),radial-gradient(circle at 10% 38%,rgba(0,174,255,.1),transparent 26%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.65}a{text-decoration:none;color:inherit}.wrap{width:min(1080px,calc(100% - 30px));margin:auto}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(5,6,17,.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:68px;display:flex;align-items:center;justify-content:center}.brand{font-weight:900;letter-spacing:6px;font-size:20px}.brand span,.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{min-height:calc(100svh - 68px);display:grid;place-items:center;padding:50px 0 35px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;border:1px solid rgba(139,61,255,.32);background:rgba(139,61,255,.08);padding:7px 12px;border-radius:999px;color:#d8c9ff;font-size:13px}h1{font-size:clamp(38px,6vw,68px);line-height:1.08;margin:18px 0 14px;letter-spacing:-2px}.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:620px;margin:0 0 24px}.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}.pill{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;padding:7px 11px;font-size:13px;color:#d9dced}.cta-row{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:14px 20px;border-radius:14px;font-weight:800;border:1px solid transparent;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--grad);box-shadow:0 12px 32px rgba(91,67,255,.28)}.btn-ghost{border-color:var(--line);background:rgba(255,255,255,.03);color:#fff}
+.proof-hero{position:relative;display:flex;justify-content:center}.device{width:min(360px,82vw);border:9px solid #17192b;border-radius:34px;padding:6px;background:#03040a;box-shadow:0 24px 70px rgba(0,0,0,.38),0 0 80px rgba(86,53,255,.2);transform:rotate(2deg)}.device img{display:block;width:100%;border-radius:22px}.tag48{position:absolute;bottom:8%;left:0;background:#0d1222;border:1px solid rgba(18,217,255,.35);padding:10px 15px;border-radius:14px;font-weight:800}
+section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 32px}.section-head h2{font-size:clamp(28px,4vw,44px);margin:0 0 8px;line-height:1.15}.section-head p{color:var(--muted);margin:0}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:20px;overflow:hidden}.card-img{aspect-ratio:4/5;background:#080914;overflow:hidden}.card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}.card:hover img{transform:scale(1.035)}.card-body{padding:16px}.card-body h3{margin:0 0 4px;font-size:18px}.card-body p{margin:0 0 13px;color:var(--muted);font-size:14px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.feature{padding:20px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:18px}.icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(139,61,255,.22),rgba(0,169,255,.18));margin-bottom:12px}.feature h3{font-size:16px;margin:0 0 5px}.feature p{font-size:13px;color:var(--muted);margin:0}
+.offer{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(139,61,255,.12),rgba(0,169,255,.07));border:1px solid rgba(139,61,255,.25);border-radius:28px;padding:34px}.offer-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.delivery{display:inline-flex;background:rgba(18,217,255,.08);border:1px solid rgba(18,217,255,.25);padding:8px 12px;border-radius:999px;font-weight:800}.price{font-size:48px;font-weight:950;line-height:1;margin:10px 0}.price small{font-size:18px;color:#bfc4d7}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:18px}.check{font-size:14px;color:#dfe4f2}.check:before{content:"✓";color:#25D366;font-weight:900;margin-left:7px}.note{color:#9da4bb;font-size:12px;margin-top:14px}.whatsapp{background:var(--wa);color:#041309;padding:16px 24px;border-radius:15px;font-weight:950;display:inline-flex;align-items:center;gap:9px;box-shadow:0 14px 38px rgba(37,211,102,.18)}
+.final{padding:72px 0 110px;text-align:center}.final-box{border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:28px;padding:42px 20px}.final h2{font-size:clamp(30px,5vw,48px);margin:0 0 10px}.final p{color:var(--muted);margin:0 auto 22px;max-width:580px}.float-wa{position:fixed;z-index:40;left:17px;bottom:17px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--wa);color:#041309;box-shadow:0 12px 32px rgba(0,0,0,.4);font-size:25px}footer{border-top:1px solid var(--line);padding:24px 0 85px;color:#858ba3;text-align:center;font-size:12px}
+.modal{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.78);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{width:min(720px,100%);max-height:90svh;overflow:auto;background:#090b17;border:1px solid var(--line);border-radius:24px;padding:18px;position:relative}.modal-box img{width:100%;max-height:70svh;object-fit:contain;border-radius:15px;background:#03040a}.close{position:absolute;top:10px;left:10px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#121426;color:#fff;font-size:22px;cursor:pointer}
+@media(max-width:820px){.hero-grid,.offer-grid{grid-template-columns:1fr}.proof-hero{order:-1}.device{width:min(310px,75vw)}.tag48{left:5%}.proof-grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}section{padding:58px 0}}@media(max-width:520px){.wrap{width:calc(100% - 22px)}h1{font-size:42px}.proof-grid{gap:10px}.card-body{padding:12px}.card-body h3{font-size:15px}.card-body p{font-size:12px}.features{grid-template-columns:1fr 1fr}.feature{padding:15px}.offer{padding:24px 18px}.checks{grid-template-columns:1fr}.cta-row .btn{width:100%}}
 </style>
-
-<!-- Google Analytics 4: preserved from existing page -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRW3DQXEQ5"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRW3DQXEQ5"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NRW3DQXEQ5',{send_page_view:true});</script>
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','26761924540141738');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=26761924540141738&ev=PageView&noscript=1"></noscript>
+</head><body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#top">Ai<span>pudio</span></a></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid"><div><span class="eyebrow">Aipudio • Landing Pages</span><h1>بتصرف فلوس على الإعلانات…<br><span class="grad">والعميل مبيطلبش؟</span></h1><p class="lead">صفحة هبوط مصممة لمنتجك، سريعة على الموبايل ومهيأة لتحويل الزائر إلى طلب عبر واتساب.</p><div class="pills"><span class="pill">Mobile First</span><span class="pill">WhatsApp Order</span><span class="pill">جاهزة للإعلانات</span></div><div class="cta-row"><a class="btn btn-primary" href="#samples" data-track="hero_samples">شوف النماذج ↓</a><a class="btn btn-ghost" href="#offer">اعرف السعر</a></div></div><div class="proof-hero"><div class="device"><img src="assets/sample-phone.png" alt="نموذج صفحة هبوط لمنتج على الهاتف"></div><div class="tag48">⚡ التسليم خلال 48 ساعة</div></div></div></section>
+<section id="samples"><div class="wrap"><div class="section-head"><h2>شوف <span class="grad">النماذج</span> بنفسك</h2><p>نماذج من تنفيذات Aipudio الإعلانية وصفحات البيع. اضغط على أي نموذج لمشاهدته بحجم أكبر.</p></div><div class="proof-grid">
+<article class="card"><div class="card-img"><img src="assets/sample-phone.png" alt="نموذج صفحة منتج"></div><div class="card-body"><h3>صفحة منتج</h3><p>عرض المنتج + مزايا + طلب مباشر عبر واتساب.</p><button class="btn btn-ghost" style="width:100%" onclick="openModal('assets/sample-phone.png','نموذج صفحة منتج')">شوف النموذج</button></div></article>
+<article class="card"><div class="card-img"><img src="assets/sample-wallet.png" alt="نموذج إعلان لخدمة صفحة هبوط"></div><div class="card-body"><h3>Landing Page للبيع</h3><p>رسالة ألم واضحة وحل مباشر مع CTA.</p><button class="btn btn-ghost" style="width:100%" onclick="openModal('assets/sample-wallet.png','نموذج صفحة هبوط')">شوف النموذج</button></div></article>
+<article class="card"><div class="card-img"><img src="assets/sample-lion-1.png" alt="نموذج تحويل"></div><div class="card-body"><h3>صفحة تحويل</h3><p>تصميم موجه لتحويل الزائر إلى عميل.</p><button class="btn btn-ghost" style="width:100%" onclick="openModal('assets/sample-lion-1.png','نموذج تحويل')">شوف النموذج</button></div></article>
+</div><div style="text-align:center;margin-top:22px;color:#9da4bb;font-size:12px">النماذج المعروضة أمثلة من المواد الإبداعية الحالية؛ يمكن إضافة روابط الصفحات الحية لاحقًا.</div></div></section>
+<section><div class="wrap"><div class="section-head"><h2>مش مجرد تصميم…</h2><p>بنجهز الصفحة حول هدف واحد: تسهيل قرار الشراء وطلب المنتج.</p></div><div class="features"><div class="feature"><div class="icon">📱</div><h3>موبايل أولاً</h3><p>مصممة للشاشة التي يأتي منها أغلب الزوار.</p></div><div class="feature"><div class="icon">🎯</div><h3>عرض واضح</h3><p>المنتج والمميزات والطلب في مسار قصير.</p></div><div class="feature"><div class="icon">💬</div><h3>طلب واتساب</h3><p>زر مباشر برسالة جاهزة تقلل الاحتكاك.</p></div><div class="feature"><div class="icon">🚀</div><h3>جاهزة للإعلانات</h3><p>هيكل مناسب لصفحات الحملات والقياس.</p></div></div></div></section>
+<section id="offer"><div class="wrap"><div class="offer"><div class="offer-grid"><div><span class="delivery">⚡ استلام خلال 48 ساعة</span><h2 style="font-size:30px;margin:18px 0 0">صفحة هبوط لمنتجك</h2><div class="price">1,500 <small>ج.م</small></div><div class="checks"><div class="check">تصميم مخصص لمنتجك</div><div class="check">متجاوبة مع الموبايل</div><div class="check">طلب مباشر عبر واتساب</div><div class="check">جاهزة للإعلانات</div></div><div class="note">الدفع مقدمًا لبدء التنفيذ.</div></div><div><a class="whatsapp" href="#" id="waOffer" data-track="offer_whatsapp">اطلب صفحتك الآن عبر واتساب</a></div></div></div></div></section>
+<section class="final"><div class="wrap"><div class="final-box"><h2>جاهز نبدأ؟</h2><p>ابعت بيانات منتجك وصوره على واتساب، ونبدأ تنفيذ صفحة الهبوط مباشرة.</p><a class="whatsapp" href="#" id="waFinal" data-track="final_whatsapp">ابدأ صفحتك الآن ↗</a><div style="margin-top:13px;color:#7f869f;font-size:12px">التسليم خلال 48 ساعة • 1,500 ج.م • الدفع مقدمًا</div></div></div></section>
+</main><footer><div class="wrap">Aipudio — Creative Intelligence for Modern Business</div></footer><a class="float-wa" href="#" id="waFloat" aria-label="واتساب" data-track="floating_whatsapp">◉</a>
+<div class="modal" id="modal" onclick="closeModal(event)"><div class="modal-box"><button class="close" onclick="closeModal(event)">×</button><h3 id="modalTitle" style="margin:0 0 12px"></h3><img id="modalImg" src="" alt=""></div></div>
 <script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NRW3DQXEQ5',{send_page_view:true});
-</script>
+const WHATSAPP_NUMBER='201005825888';const message=`السلام عليكم 👋
+أريد تنفيذ Landing Page لمنتجي.
 
-<!-- Meta Pixel: preserved from existing page -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','26761924540141738');
-fbq('track','PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=26761924540141738&ev=PageView&noscript=1"/></noscript>
-</head>
+اسم المنتج:
+نوع النشاط:
+السعر:
+رابط الصفحة/الحساب:
 
-<body>
-
-<section class="hero">
-<div class="wrap">
-<span class="eyebrow">AIPUDIO • LANDING PAGE</span>
-<h1>بتصرف فلوس على الإعلانات<br>والعميل بيدخل <span class="accent">ومبيطلبش؟</span></h1>
-<p>المشكلة مش دايمًا في الإعلان. أحيانًا العميل يحتاج صفحة واضحة تقنعه بالمنتج وتوصله للطلب مباشرة.</p>
-<a class="btn wa" data-placement="hero" href="#">ابدأ تنفيذ صفحتي الآن</a>
-<div class="note">التنفيذ يبدأ بعد سداد قيمة الخدمة مقدمًا</div>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<h2>المسار ببساطة</h2>
-<p>خلي العميل يمشي في مسار بيع واضح بدل ما يتوه بين المنشورات والرسائل.</p>
-<div class="flow">
-<div class="card step"><b>إعلان</b><span>يجذب العميل</span></div>
-<div class="card step"><b>Landing Page</b><span>تشرح وتقنع</span></div>
-<div class="card step"><b>WhatsApp</b><span>طلب مباشر</span></div>
-<div class="card step"><b>بيع</b><span>خطوة واضحة</span></div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<span class="eyebrow">شوف النتيجة</span>
-<h2>مش مجرد تصميم… دي صفحة بيع.</h2>
-<p>نموذج مبسط لطريقة عرض المنتج والمميزات والسعر والطلب.</p>
-
-<div class="demo">
-<div class="mock">
-<div class="mockbar">Aipudio • Product Landing Page</div>
-<div class="mockbody">
-<div class="product">📦</div>
-<h3>منتجك هنا</h3>
-<p>عرض مختصر يوضح أهم ميزة للعميل.</p>
-<div class="mockprice">499 ج.م</div>
-<div class="mockbtn">اطلب عبر WhatsApp</div>
-</div>
-</div>
-<div class="caption">النموذج النهائي يتم تصميمه بالكامل حسب منتجك ونشاطك.</div>
-</div>
-
-<div class="features">
-<div class="card feature"><b>✓ تصميم Mobile First</b><p>مصمم أساسًا للموبايل والإعلانات.</p></div>
-<div class="card feature"><b>✓ عرض واضح للمنتج</b><p>صور + مميزات + سعر + دعوة مباشرة للطلب.</p></div>
-<div class="card feature"><b>✓ WhatsApp</b><p>زر طلب مباشر برسالة جاهزة ومخصصة.</p></div>
-<div class="card feature"><b>✓ Tracking</b><p>Meta Pixel + Google Analytics لقياس التفاعل.</p></div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<div class="offer">
-<span class="eyebrow">عرض التنفيذ</span>
-<h2>Landing Page كاملة لمنتجك</h2>
-<div class="price">1,500 ج.م</div>
-<p>سعر واضح — بدون اشتراك شهري للصفحة نفسها.</p>
-<ul>
-<li>صفحة مخصصة لمنتجك</li>
-<li>متوافقة مع الموبايل</li>
-<li>زر WhatsApp للطلب</li>
-<li>تجهيز مناسب للإعلانات</li>
-<li>Meta Pixel + قياس ضغط WhatsApp</li>
-<li>التنفيذ بعد إرسال بيانات المنتج</li>
-</ul>
-<a class="btn wa" data-placement="offer" href="#">أريد تنفيذ صفحتي — 1,500 ج.م</a>
-<div class="note">الدفع مقدمًا لحجز التنفيذ والبدء في العمل.</div>
-</div>
-</div>
-</section>
-
-<section class="final">
-<div class="wrap">
-<h2>عندك منتج جاهز للبيع؟</h2>
-<p>خلّي إعلانك يروح لصفحة معمولة عشان تقرّب العميل من الطلب.</p>
-<a class="btn wa" data-placement="final" href="#">ابدأ التنفيذ الآن عبر WhatsApp</a>
-</div>
-</section>
-
-<footer class="footer">Aipudio — Creative Intelligence for Modern Business</footer>
-
-<script>
-const WHATSAPP_NUMBER="201005825888";
- <!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aipudio | Landing Page لمنتجك</title>
-<meta name="description" content="صفحة هبوط احترافية لعرض منتجك وتحويل زوار الإعلانات إلى طلبات عبر WhatsApp.">
-<meta name="theme-color" content="#080914">
-
-<style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#080914;color:#f7f7fb;font-family:Arial,Tahoma,sans-serif;line-height:1.7}
-a{text-decoration:none;color:inherit}
-.wrap{max-width:620px;margin:auto;padding:0 18px}
-section{padding:30px 0}
-.hero{text-align:center;padding:38px 0 25px;background:radial-gradient(circle at 50% 0%,rgba(139,61,255,.18),transparent 48%)}
-.eyebrow{display:inline-block;padding:5px 12px;border:1px solid rgba(139,61,255,.45);border-radius:999px;color:#c8a9ff;background:rgba(139,61,255,.08);font-size:12px}
-h1{font-size:clamp(34px,9vw,52px);line-height:1.16;letter-spacing:-1.5px;margin:15px 0 12px}
-h2{font-size:28px;line-height:1.25;margin:7px 0 10px}
-p{color:#aeb4c4;font-size:16px;margin:5px 0}
-.accent{color:#b993ff}
-.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:58px;margin:18px 0;border-radius:15px;background:linear-gradient(135deg,#25d366,#18b957);color:#06150c;font-weight:900;font-size:18px;box-shadow:0 10px 30px rgba(37,211,102,.16)}
-.note{text-align:center;color:#7f8798;font-size:12px}
-.flow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:17px}
-.card{background:#111322;border:1px solid #24283b;border-radius:16px;padding:14px}
-.step{text-align:center}.step b{display:block;font-size:15px}.step span{font-size:12px;color:#8e96a9}
-.demo{margin-top:17px;background:#0d0f1b;border:1px solid #2a2d42;border-radius:20px;padding:10px}
-.mock{overflow:hidden;background:#f7f8fb;color:#141824;border-radius:14px}
-.mockbar{height:32px;background:#e7eaf0;padding:7px 10px;color:#98a0ae;font-size:10px}
-.mockbody{padding:16px}.product{height:165px;border-radius:12px;background:linear-gradient(135deg,#e2e8f0,#9aabc0);display:grid;place-items:center;font-size:46px}
-.mock h3{font-size:23px;margin:10px 0 0}.mockprice{font-size:24px;font-weight:900;margin:7px 0}.mockbtn{background:#20bf63;color:#fff;text-align:center;padding:10px;border-radius:10px;font-weight:800}
-.caption{text-align:center;color:#7e8798;font-size:12px;padding:9px 3px 1px}
-.features{display:grid;gap:10px;margin-top:14px}.feature b{font-size:15px}.feature p{font-size:13px}
-.offer{text-align:center;padding:24px;background:linear-gradient(180deg,#15182a,#0d101c);border:1px solid #353951;border-radius:22px}
-.price{font-size:45px;font-weight:900;line-height:1.1;margin:4px 0 5px}.offer ul{text-align:right;list-style:none;padding:0;margin:15px 0}.offer li{padding:5px 0;color:#dce1ea}.offer li:before{content:"✓";color:#42dc82;font-weight:bold;margin-left:8px}
-.final{text-align:center;padding-bottom:40px}.final h2{font-size:31px}
-.footer{text-align:center;color:#697186;font-size:11px;padding:22px;border-top:1px solid #1a1d2b}
-@media(min-width:600px){.flow{grid-template-columns:repeat(4,1fr)}}
-</style>
-
-<!-- Google Analytics 4: preserved from existing page -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NRW3DQXEQ5"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NRW3DQXEQ5',{send_page_view:true});
-</script>
-
-<!-- Meta Pixel: preserved from existing page -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','26761924540141738');
-fbq('track','PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=26761924540141738&ev=PageView&noscript=1"/></noscript>
-</head>
-
-<body>
-
-<section class="hero">
-<div class="wrap">
-<span class="eyebrow">AIPUDIO • LANDING PAGE</span>
-<h1>بتصرف فلوس على الإعلانات<br>والعميل بيدخل <span class="accent">ومبيطلبش؟</span></h1>
-<p>المشكلة مش دايمًا في الإعلان. أحيانًا العميل يحتاج صفحة واضحة تقنعه بالمنتج وتوصله للطلب مباشرة.</p>
-<a class="btn wa" data-placement="hero" href="#">ابدأ تنفيذ صفحتي الآن</a>
-<div class="note">التنفيذ يبدأ بعد سداد قيمة الخدمة مقدمًا</div>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<h2>المسار ببساطة</h2>
-<p>خلي العميل يمشي في مسار بيع واضح بدل ما يتوه بين المنشورات والرسائل.</p>
-<div class="flow">
-<div class="card step"><b>إعلان</b><span>يجذب العميل</span></div>
-<div class="card step"><b>Landing Page</b><span>تشرح وتقنع</span></div>
-<div class="card step"><b>WhatsApp</b><span>طلب مباشر</span></div>
-<div class="card step"><b>بيع</b><span>خطوة واضحة</span></div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<span class="eyebrow">شوف النتيجة</span>
-<h2>مش مجرد تصميم… دي صفحة بيع.</h2>
-<p>نموذج مبسط لطريقة عرض المنتج والمميزات والسعر والطلب.</p>
-
-<div class="demo">
-<div class="mock">
-<div class="mockbar">Aipudio • Product Landing Page</div>
-<div class="mockbody">
-<div class="product">📦</div>
-<h3>منتجك هنا</h3>
-<p>عرض مختصر يوضح أهم ميزة للعميل.</p>
-<div class="mockprice">499 ج.م</div>
-<div class="mockbtn">اطلب عبر WhatsApp</div>
-</div>
-</div>
-<div class="caption">النموذج النهائي يتم تصميمه بالكامل حسب منتجك ونشاطك.</div>
-</div>
-
-<div class="features">
-<div class="card feature"><b>✓ تصميم Mobile First</b><p>مصمم أساسًا للموبايل والإعلانات.</p></div>
-<div class="card feature"><b>✓ عرض واضح للمنتج</b><p>صور + مميزات + سعر + دعوة مباشرة للطلب.</p></div>
-<div class="card feature"><b>✓ WhatsApp</b><p>زر طلب مباشر برسالة جاهزة ومخصصة.</p></div>
-<div class="card feature"><b>✓ Tracking</b><p>Meta Pixel + Google Analytics لقياس التفاعل.</p></div>
-</div>
-</div>
-</section>
-
-<section>
-<div class="wrap">
-<div class="offer">
-<span class="eyebrow">عرض التنفيذ</span>
-<h2>Landing Page كاملة لمنتجك</h2>
-<div class="price">1,500 ج.م</div>
-<p>سعر واضح — بدون اشتراك شهري للصفحة نفسها.</p>
-<ul>
-<li>صفحة مخصصة لمنتجك</li>
-<li>متوافقة مع الموبايل</li>
-<li>زر WhatsApp للطلب</li>
-<li>تجهيز مناسب للإعلانات</li>
-<li>Meta Pixel + قياس ضغط WhatsApp</li>
-<li>التنفيذ بعد إرسال بيانات المنتج</li>
-</ul>
-<a class="btn wa" data-placement="offer" href="#">أريد تنفيذ صفحتي — 1,500 ج.م</a>
-<div class="note">الدفع مقدمًا لحجز التنفيذ والبدء في العمل.</div>
-</div>
-</div>
-</section>
-
-<section class="final">
-<div class="wrap">
-<h2>عندك منتج جاهز للبيع؟</h2>
-<p>خلّي إعلانك يروح لصفحة معمولة عشان تقرّب العميل من الطلب.</p>
-<a class="btn wa" data-placement="final" href="#">ابدأ التنفيذ الآن عبر WhatsApp</a>
-</div>
-</section>
-
-<footer class="footer">Aipudio — Creative Intelligence for Modern Business</footer>
-
-<script>
-const WHATSAPP_NUMBER="201005825888";
-const MESSAGE =
-"السلام عليكم، أريد تنفيذ Landing Page لمنتجي.\n\n" +
-"📦 المنتج: —\n" +
-"🏢 نوع النشاط: —\n" +
-"💰 السعر: —\n" +
-"🔗 رابط الصفحة/الحساب: —\n\n" +
-"وسأرسل الصور والتفاصيل للبدء.";
-document.querySelectorAll(".wa").forEach(function(button){
-button.addEventListener("click",function(){
-const placement=button.dataset.placement||"unknown";
-const url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(MESSAGE);
-
-/*
-  مهم:
-  لا نرسل Lead هنا حتى لا تتكرر مشكلة ظهور "عملاء محتملين"
-  لمجرد الضغط على زر WhatsApp.
-  نسجل Contact + حدث مخصص WhatsAppClick.
-*/
-if(typeof gtag==="function"){
-gtag("event","whatsapp_click",{
-event_category:"engagement",
-event_label:placement,
-cta_placement:placement
-});
-}
-
-if(typeof fbq==="function"){
-fbq("track","Contact",{
-contact_method:"whatsapp",
-cta_placement:placement
-});
-fbq("trackCustom","WhatsAppClick",{
-cta_placement:placement
-});
-}
-
-window.open(url,"_blank");
-});
-});
-</script>
-
-</body>
-</html>.";
-
-document.querySelectorAll(".wa").forEach(function(button){
-button.addEventListener("click",function(){
-const placement=button.dataset.placement||"unknown";
-const url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(MESSAGE);
-
-/*
-  مهم:
-  لا نرسل Lead هنا حتى لا تتكرر مشكلة ظهور "عملاء محتملين"
-  لمجرد الضغط على زر WhatsApp.
-  نسجل Contact + حدث مخصص WhatsAppClick.
-*/
-if(typeof gtag==="function"){
-gtag("event","whatsapp_click",{
-event_category:"engagement",
-event_label:placement,
-cta_placement:placement
-});
-}
-
-if(typeof fbq==="function"){
-fbq("track","Contact",{
-contact_method:"whatsapp",
-cta_placement:placement
-});
-fbq("trackCustom","WhatsAppClick",{
-cta_placement:placement
-});
-}
-
-window.open(url,"_blank");
-});
-});
-</script>
-
-</body>
-</html>
+وسأرسل صور المنتج والتفاصيل للبدء.`;const waUrl=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+['waOffer','waFinal','waFloat'].forEach(id=>{const e=document.getElementById(id);if(e)e.href=waUrl});
+function trackLead(p){if(typeof gtag==='function')gtag('event','generate_lead',{lead_method:'whatsapp',cta_placement:p});if(typeof fbq==='function')fbq('track','Lead',{lead_method:'whatsapp',cta_placement:p})}
+document.querySelectorAll('[data-track]').forEach(e=>e.addEventListener('click',()=>trackLead(e.dataset.track)));
+function openModal(src,title){document.getElementById('modalImg').src=src;document.getElementById('modalTitle').textContent=title;document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}function closeModal(e){if(e.target.id==='modal'||e.target.classList.contains('close')){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}}document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}});
+</script></body></html>
