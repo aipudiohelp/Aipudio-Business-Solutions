@@ -73,19 +73,12 @@ section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 
 </article>
 </div><div style="text-align:center;margin-top:22px;color:#9da4bb;font-size:12px">النماذج المعروضة أمثلة من المواد الإبداعية الحالية.</div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>مش مجرد تصميم…</h2><p>بنجهز الصفحة حول هدف واحد: تسهيل قرار الشراء وطلب المنتج.</p></div><div class="features"><div class="feature"><div class="icon">📱</div><h3>موبايل أولاً</h3><p>مصممة للشاشة التي يأتي منها أغلب الزوار.</p></div><div class="feature"><div class="icon">🎯</div><h3>عرض واضح</h3><p>المنتج والمميزات والطلب في مسار قصير.</p></div><div class="feature"><div class="icon">💬</div><h3>طلب واتساب</h3><p>زر مباشر برسالة جاهزة تقلل الاحتكاك.</p></div><div class="feature"><div class="icon">🚀</div><h3>جاهزة للإعلانات</h3><p>هيكل مناسب لصفحات الحملات والقياس.</p></div></div></div></section>
-<section id="offer"><div class="wrap"><div class="offer"><div class="offer-grid"><div><span class="delivery">⚡ استلام خلال 48 ساعة</span><h2 style="font-size:30px;margin:18px 0 0">صفحة هبوط لمنتجك</h2><div class="price">1,500 <small>ج.م</small></div><div class="checks"><div class="check">تصميم مخصص لمنتجك</div><div class="check">متجاوبة مع الموبايل</div><div class="check">طلب مباشر عبر واتساب</div><div class="check">جاهزة للإعلانات</div></div><div class="note">تأكيد الحجز والبدء فور إرسال البيانات.</div></div><div><a class="whatsapp" href="#" id="waOffer" data-track="offer_whatsapp">اطلب صفحتك الآن عبر واتساب</a></div></div></div></div></section>
-<section class="final"><div class="wrap"><div class="final-box"><h2>جاهز نبدأ؟</h2><p>ابعت بيانات منتجك وصوره على واتساب، ونبدأ تنفيذ صفحة الهبوط مباشرة.</p><a class="whatsapp" href="#" id="waFinal" data-track="final_whatsapp">ابدأ صفحتك الآن ↗</a><div style="margin-top:13px;color:#7f869f;font-size:12px">التسليم خلال 48 ساعة • 1,500 ج.م • تأكيد الحجز والبدء فور إرسال البيانات.
+<section id="offer"><div class="wrap"><div class="offer"><div class="offer-grid"><div><span class="delivery">⚡ استلام خلال 48 ساعة</span><h2 style="font-size:30px;margin:18px 0 0">صفحة هبوط لمنتجك</h2><div class="price">تبدأ من 500  <small>ج.م</small></div><div class="checks"><div class="check">تصميم مخصص لمنتجك</div><div class="check">متجاوبة مع الموبايل</div><div class="check">طلب مباشر عبر واتساب</div><div class="check">جاهزة للإعلانات</div></div><div class="note">تأكيد الحجز والبدء فور إرسال البيانات.</div></div><div><a class="whatsapp" href="#" id="waOffer" data-track="offer_whatsapp">اطلب صفحتك الآن عبر واتساب</a></div></div></div></div></section>
+<section class="final"><div class="wrap"><div class="final-box"><h2>جاهز نبدأ؟</h2><p>ابعت بيانات منتجك وصوره على واتساب، ونبدأ تنفيذ صفحة الهبوط مباشرة.</p><a class="whatsapp" href="#" id="waFinal" data-track="final_whatsapp">ابدأ صفحتك الآن ↗</a><div style="margin-top:13px;color:#7f869f;font-size:12px">التسليم خلال 48 ساعة • 500 ج.م • تأكيد الحجز والبدء فور إرسال البيانات.
 <div class="modal" id="modal" onclick="closeModal(event)"><div class="modal-box"><button class="close" onclick="closeModal(event)">×</button><h3 id="modalTitle" style="margin:0 0 12px"></h3><img id="modalImg" src="" alt=""></div></div>
 <script>
-const WHATSAPP_NUMBER='201005825888';const message=`السلام عليكم 👋
-أريد تنفيذ Landing Page لمنتجي.
-
-اسم المنتج:
-نوع النشاط:
-السعر:
-رابط الصفحة/الحساب:
-
-وسأرسل صور المنتج والتفاصيل للبدء.`;const waUrl=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+const WHATSAPP_NUMBER='201005825888';const message=`مرحبا Aipudio 👋
+حابب أعرف أنسب صفحة هبوط لنشاطي وتكلفتها.`;const waUrl=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 ['waOffer','waFinal','waFloat'].forEach(id=>{const e=document.getElementById(id);if(e)e.href=waUrl});
 function trackLead(p){if(typeof gtag==='function')gtag('event','generate_lead',{lead_method:'whatsapp',cta_placement:p});if(typeof fbq==='function')fbq('track','Lead',{lead_method:'whatsapp',cta_placement:p})}
 document.querySelectorAll('[data-track]').forEach(e=>e.addEventListener('click',()=>trackLead(e.dataset.track)));
